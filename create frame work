@@ -1,0 +1,15 @@
+temp_df = pd.DataFrame(response.json())[['drillId','drillName','drillStartDt','drillEndDt','drillRegistrationEndDt','drillScheduleIfNotDateKnown','drillNature','drillCustUrl','drillPurpose',]]
+
+df = pd.DataFrame()
+df
+
+
+response=requests.get('https://api.wuelev8.tech/internity/api/v1/drills')
+
+response=requests.get('https://api.wuelev8.tech/internity/api/v1/drills/26c2e839-7e9a-49b7-8d1b-0be9d3e6655d/users')
+response.json()
+
+df=pd.DataFrame(response.json())
+
+df.to_csv('name2.csv')
+df
