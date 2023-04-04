@@ -1,0 +1,4 @@
+df=pd.DataFrame(response.json())
+
+df.to_csv('name.csv')
+df.head()
